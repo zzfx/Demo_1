@@ -25,6 +25,7 @@ public class PersonController {
     //模糊查询
     @RequestMapping("/getPersonByNameLike")
     public List<Person> getPersonByNameLike(String name){
+        System.out.println("hahah");
         return personRepository.getPersonByNameLike(name);
     }
 
